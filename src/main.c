@@ -4,6 +4,7 @@
 int main() {
     iniciar_jogo();
     while (jogo_ativo()) {
+        
         atualizar_jogo();
         desenhar_jogo();
     }

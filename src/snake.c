@@ -1,5 +1,11 @@
 #include "snake.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <termios.h>
+#include <unistd.h>
+#include <pthread.h>
+
+#include "keyboard.h"
 
 typedef struct Nodo {
     int x, y;
@@ -18,15 +24,21 @@ void iniciar_cobrinha(int x, int y) {
     cauda = cabeca;
 }
 
-void mover_cobrinha() {
-    int novo_x = cabeca->x + direcao_x;
-    int novo_y = cabeca->y + direcao_y;
+// Muda a direção com base na entrada do usuário
+void mudar_direcao() {
+    if (keyhit()){
+        int ch = readch();
+        if (ch == 'w' && direcao_y == 0) { direcao_x = 0; direcao_y = -1; } // cima
+        if (ch == 's' && direcao_y == 0) { direcao_x = 0; direcao_y = 1; }  // baixo
+        if (ch == 'a' && direcao_x == 0) { direcao_x = -1; direcao_y = 0; } // esquerda
+        if (ch == 'd' && direcao_x == 0) { direcao_x = 1; direcao_y = 0; }  // direita
+    }
 
-    Nodo* novo_nodo = (Nodo*)malloc(sizeof(Nodo));
-    novo_nodo->x = novo_x;
-    novo_nodo->y = novo_y;
-    novo_nodo->prox = cabeca;
-    cabeca = novo_nodo;
+}
+
+void mover_cobrinha() {
+    cabeca->x = cabeca->x + direcao_x;
+    cabeca->y = cabeca->y + direcao_y;
 }
 
 void crescer_cobrinha() {
@@ -34,9 +46,18 @@ void crescer_cobrinha() {
 }
 
 int verificar_colisao(int largura, int altura) {
+    // Colisão com paredes
     if (cabeca->x < 0 || cabeca->y < 0 || cabeca->x >= largura || cabeca->y >= altura) {
         return 1;
     }
+
+    // Colisão com o corpo
+    Nodo* atual = cabeca->prox;
+    while (atual != NULL) {
+        if (cabeca->x == atual->x && cabeca->y == atual->y) return 1;
+        atual = atual->prox;
+    }
+    
     return 0;
 }
 

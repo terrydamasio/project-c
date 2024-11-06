@@ -9,6 +9,7 @@
 
 void screenDrawBorders() 
 {
+    
     char hbc = BOX_HLINE;
     char vbc = BOX_VLINE;
     

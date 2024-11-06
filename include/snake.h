@@ -3,6 +3,7 @@
 
 void iniciar_cobrinha(int x, int y);
 void mover_cobrinha();
+void mudar_direcao();
 void crescer_cobrinha();
 int verificar_colisao(int largura, int altura);
 int verificar_posicao_cobrinha(int x, int y);
