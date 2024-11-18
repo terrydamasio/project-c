@@ -1,13 +1,13 @@
 # project-c
 
- **Disciplina:** Programação Imperativa e Funcional | 2024.2
- **Instituição:** Cesar School
- **Nome:** Point Chaser
- **Integrantes do grupo:**
-    - Kerry Muniz Santos | Git: @kerrymuniz
-    - Terry Damasio Santos | Git: @terrydamasio
-    - Heitor Santana | Git: @heitoorr
-    - Gabriel Abreu | Git: @abreu345
+ **Disciplina:** Programação Imperativa e Funcional | 2024.2 </br>
+ **Instituição:** Cesar School</br>
+ **Nome:** Point Chaser</br>
+ **Integrantes do grupo:**</br>
+    - Kerry Muniz Santos | Git: @kerrymuniz </br>
+    - Terry Damasio Santos | Git: @terrydamasio </br>
+    - Heitor Santana | Git: @heitoorr </br>
+    - Gabriel Abreu | Git: @abreu345 </br>
 
 
 -> Compilação e Execução do jogo:
