@@ -2,7 +2,7 @@
 
  **Disciplina:** Programação Imperativa e Funcional | 2024.2 </br>
  **Instituição:** Cesar School</br>
- **Nome:** Point Chaser</br>
+ **Nome:** Point Chaser</br></br>
  **Integrantes do grupo:**</br>
     - Kerry Muniz Santos | Git: @kerrymuniz </br>
     - Terry Damasio Santos | Git: @terrydamasio </br>
