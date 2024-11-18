@@ -10,9 +10,9 @@
     - Gabriel Abreu | Git: @abreu345 </br>
 
 
--> Compilação e Execução do jogo:
-    - ...
+ **Compilação e Execução do jogo:** </br>
+   
 
  **Descrição do Jogo:** </br>
-    - O Jogo é uma recriação simplificada do clássico jogo do Pacman, implementado em C e executado diretamente no terminal. Neste Game, o jogador controla o "Pacman" que se move pela tela, buscando coletar a comida que aparece aleatoriamente. A cada vez que ele coleta a 
-    comida, o jogador acumula um ponto. O objetivo é coletar o máximo de pontos possíveis sem colidir com as bordas da tela.
+O Jogo é uma recriação simplificada do clássico jogo do Pacman, implementado em C e executado diretamente no terminal. Neste Game, o jogador controla o "Pacman" que se move pela tela, buscando coletar a comida que aparece aleatoriamente. A cada vez que ele coleta a 
+comida, o jogador acumula um ponto. O objetivo é coletar o máximo de pontos possíveis sem colidir com as bordas da tela.
