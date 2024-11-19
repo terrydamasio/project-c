@@ -178,4 +178,7 @@ void screenGotoxy(int x, int y);
 */
 void screenSetColor(screenColor fg, screenColor bg);
 
+void screenDrawBorders();
+
+
 #endif /* __SCREEN_H__ */
